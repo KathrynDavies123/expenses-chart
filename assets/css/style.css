@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #f8e9dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 67px 16px;
+  gap: 16px;
+}
+
+.balance {
+  background-color: #ec755d;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 343px;
+  height: 97px;
+  padding: 20px 24px 20px 20px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #fffbf6;
+}
+
+img {
+  width: 60px;
+  height: 40px;
+}
+
+main {
+  background-color: #fffbf6;
+  border-radius: 10px;
+  width: 343px;
+  padding: 24px 20px;
+}
+
+h2 {
+  color: #382314;
+  margin-bottom: 40px;
+}
+
+.chart {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  height: 200px;
+}
+
+.chart div {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 33px;
+  align-items: center;
+  gap: 5px;
+}
+
+.daytext {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #92857a;
+  margin-top: 6px;
+}
+
+.chart div div {
+  background-color: #ec755d;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.chart .currentday {
+  background-color: #76b5bc;
+}
+
+.chart .currentday:hover {
+  background-color: #b4e0e5;
+}
+
+.amounttext {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  color: #fffbf6;
+  background: #382314;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
+}
+
+.chart div div:hover {
+  cursor: pointer;
+  background-color: #ff9b86;
+}
+
+.chart div div:hover + .amounttext {
+  opacity: 1;
+}
+
+.totals {
+  padding-top: 24px;
+  border-top: 1px solid #f8e9dd;
+}
+
+.monthtotal {
+  font-size: 15px;
+  line-height: 20px;
+  color: #92857a;
+}
+
+.totals div {
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  font-size: 30px;
+  line-height: 39px;
+  color: #382314;
+}
+
+.totals div div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.percentage {
+  font-weight: 700;
+  color: #382314;
+}
+
+.timeperiod {
+  color: #92857a;
+}
+
+@media (min-width: 600px) {
+  .balance,
+  main {
+    width: 540px;
+  }
+
+  .balance {
+    height: 125px;
+    padding: 27px 39px 25px 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  img {
+    width: 72px;
+    height: 48px;
+  }
+
+  main {
+    padding: 32px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 511px;
+  }
+
+  h2 {
+    align-self: flex-start;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom:20px;
+  }
+
+  .chart {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    height:350px;
+  }
+
+  .chart div {
+    width: 50px;
+  }
+
+  .amounttext {
+    width: 75px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    padding:8px;
+    margin-bottom:8px;
+  }
+
+  .daytext {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .totals {
+    width: 100%;
+    padding-top: 32px;
+  }
+
+  .monthtotal {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  h5 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .totals div div {
+    justify-content: center;
+  }
+
+  .percentage {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .timeperiod {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
